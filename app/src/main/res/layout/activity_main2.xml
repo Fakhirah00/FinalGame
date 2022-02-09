@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/YT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Your Reccomendations"
+        android:paddingTop="30sp"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/Recom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/YT"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:paddingTop="30sp"
+        android:text="-Manage social media time"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Recom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Recom1"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:paddingTop="30sp"
+        android:text="-Practice positive self-talk and reflect on achievements"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Recom3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Recom2"
+        android:layout_marginTop="-4dp"
+        android:gravity="center"
+        android:paddingTop="30sp"
+        android:text="-Journaling write down how you feel and anything that makes you feel uneasy! "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Recom4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Recom3"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:paddingTop="30sp"
+        android:text="-Healthy Diet-reduce alcohol and excessive caffeine intake "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Recom5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Recom4"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:paddingTop="30sp"
+        android:text="-Manage time by setting enough time for assignments and revision  "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Recom6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Recom5"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:paddingTop="30sp"
+        android:text="-Drinking 2L of water everyday and daily exercise   "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+</RelativeLayout>
