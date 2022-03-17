@@ -3,6 +3,7 @@ package com.example.gameoffifteen;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView textBestTime;
     private MyBase myBase;
 
-    private Button buttonStartGame;
     private Button button;
 
     @Override
@@ -26,50 +26,47 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonStartGame = findViewById(R.id.button_start_game);
+        Button buttonStartGame = findViewById(R.id.button_start_game);
         textLastStep = findViewById(R.id.text_last_step);
         textBestStep = findViewById(R.id.text_best_step);
         textLastTime = findViewById(R.id.text_last_time);
-        textBestStep = findViewById(R.id.text_best_step);
+        textBestTime= findViewById(R.id.text_best_time);
 
         myBase = new MyBase(this);
 
-        loadData();
+//        loadData();
 
         buttonStartGame.setOnClickListener(view ->{
                     startActivityForResult(new Intent(MainActivity.this,GameActivity.class),REQUEST_CODE);
 
 
           button= (Button) findViewById(R.id.button);
-          button.setOnClickListener(new View.OnClickListener() {
-              @Override
-              public void onClick(View view) {
-                  openActivity2();
-              }
-          });
+          button.setOnClickListener(view1 -> openActivity2());
 
         });
 
     }
+            //Test Code
+//    @SuppressLint("DefaultLocale")
+//    private void loadData(){
+//        textLastStep.setText(String.valueOf(myBase.getLastStep()));
+//        textBestStep.setText(String.valueOf(myBase.getBestStep()));
+//
+//        int lastTime = myBase.getLastTime();
+//        int lastSecond = lastTime % 60;
+//        int lastHour =lastTime/3600;
+//        int lastMinute = (lastTime-lastHour*3600)/60;
+//        textLastTime.setText(String.format("%02d:%02d:%02d", lastHour,lastMinute,lastSecond));
+//
+//        int bestTime = myBase.getBestTime();
+//        int bestSecond = bestTime % 60;
+//        int bestHour =bestTime/3600;
+//        int bestMinute = (bestTime-bestHour*3600)/60;
+//        textBestTime.setText(String.format("%02d:%02d:%02d", bestHour,bestMinute,bestSecond));
+//    }
 
-    private void loadData(){
-        textLastStep.setText(String.valueOf(myBase.getLastStep()));
-        textBestStep.setText(String.valueOf(myBase.getBestStep()));
 
-        int lastTime = myBase.getLastTime();
-        int lastSecond = lastTime % 60;
-        int lastHour =lastTime/3600;
-        int lastMinute = (lastTime-lastHour*3600)/60;
-        textLastTime.setText(String.format("%02d:%02d:%02d", lastHour,lastMinute,lastSecond));
-
-        //int bestTime = myBase.getBestTime();
-        //int bestSecond = bestTime % 60;
-        //int bestHour =bestTime/3600;
-        //int bestMinute = (bestTime-bestHour*3600)/60;
-        //textBestTime.setText(String.format("%02d:%02d:%02d", bestHour,bestMinute,bestSecond));
-    }
-
-
+    @SuppressLint("DefaultLocale")
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -84,11 +81,11 @@ public class MainActivity extends AppCompatActivity {
             int lastMinute = (lastTime-lastHour*3600)/60;
             textLastTime.setText(String.format("%02d:%02d:%02d", lastHour,lastMinute,lastSecond));
 
-           //int bestTime = myBase.getBestTime();
-            //int bestSecond = bestTime % 60;
-            //int bestHour =bestTime/3600;
-            //int bestMinute = (bestTime-bestHour*3600)/60;
-            //textBestTime.setText(String.format("%02d:%02d:%02d", bestHour,bestMinute,bestSecond));
+            int bestTime = myBase.getBestTime();
+            int bestSecond = bestTime % 60;
+            int bestHour =bestTime/3600;
+            int bestMinute = (bestTime-bestHour*3600)/60;
+            textBestTime.setText(String.format("%02d:%02d:%02d", bestHour,bestMinute,bestSecond));
         }
     }
 

@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/GameofFifteen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GameofFifteen/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GameofFifteen/app/src/main/res/layout/activity_game.xml" value="0.25" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GameofFifteen/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GameofFifteen/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GameofFifteen/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GameofFifteen/app/src/main/res/layout/activity_main3.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GameofFifteen/app/src/main/res/layout/activity_main4.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GameofFifteen/app/src/main/res/layout/activity_quotes_page.xml" value="0.21851851851851853" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GameofFifteen/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
       </map>
     </option>

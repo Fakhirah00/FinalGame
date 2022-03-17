@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/stress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-116dp" />
+
+    <ImageView
+        android:id="@+id/happy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stress"
+        android:layout_marginTop="-65dp"
+        android:src="@drawable/stress" />
+
+    <TextView
+        android:id="@+id/MQ"
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        android:gravity="center"
+        android:paddingTop="30sp"
+        android:text="Motivational Quotes"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Q1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MQ"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:paddingTop="30sp"
+        android:text="“Just one small positive thought in the morning can change your whole day.”"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Q1"
+        android:layout_marginTop="31dp"
+        android:gravity="center"
+        android:paddingTop="30sp"
+        android:text="“Inspiration does exist, but it must find you working.”"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Q3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Q2"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:paddingTop="30sp"
+        android:text="“True freedom is impossible without a mind made free by discipline.”"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Q4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Q3"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingTop="30sp"
+        android:text="“Small is not just a stepping-stone. Small is a great destination itself.”"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

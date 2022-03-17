@@ -170,13 +170,6 @@
             android:background="@color/colorFreeButton"
             android:text="" />
 
-
-
-
-
-
-
-
     </RelativeLayout>
 
     <LinearLayout
